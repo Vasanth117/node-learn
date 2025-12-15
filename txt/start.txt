@@ -1,0 +1,1 @@
+This file marks the beginning of the program’s file handling process. It contains the initial text that is read when the program starts execution. The content in this file helps initialize the workflow and ensures that file access and reading operations begin correctly.

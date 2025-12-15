@@ -1,0 +1,1 @@
+This file is intended to be read by the program to demonstrate file reading operations. It contains sample text that helps verify whether the file is opened and read correctly. The information in this file remains unchanged during execution and is used only for reading and displaying purposes.
