@@ -81,3 +81,70 @@ Best for file, database, API calls
 
 Synchronous: Operations execute sequentially, blocking the next task until completion.
 Asynchronous: Operations execute without blocking, allowing other tasks to run simultaneously.
+
+
+Creating the server
+>>>>>>
+
+
+1️⃣ http.createServer(...)
+const server = http.createServer((req, res) => {
+
+
+http → Node.js built-in module (used to create servers)
+
+createServer() → creates an HTTP server
+
+(req, res) → callback function that runs every time a request comes
+
+Parameter	Meaning
+req	Request object (data sent by browser)
+res	Response object (data sent back to browser)
+2️⃣ Sending a response
+res.end('Hello from the server!');
+
+
+Sends the response to the client (browser)
+
+Ends the response
+
+Browser will display:
+
+Hello from the server!
+
+
+⚠️ If you don’t call res.end(), the browser will keep loading forever.
+
+3️⃣ Listening on a port
+server.listen(8000, '127.0.0.1', () => {
+
+
+8000 → Port number
+
+'127.0.0.1' → localhost
+
+Callback runs when server starts successfully
+
+4️⃣ Confirmation message
+console.log('Listening to request on port 8000');
+
+
+Just a message to confirm server is running
+
+🌐 How to run this
+1️⃣ Complete code (IMPORTANT)
+
+You must include:
+
+const http = require('http');
+
+Final working code:
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.end('Hello from the server!');
+});
+
+server.listen(8000, '127.0.0.1', () => {
+    console.log('Listening to request on port 8000');
+});
