@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900" rel="stylesheet"/>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png"/>
+    <title>Fresh Food Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Megrim', cursive;
+            font-size: 3.5rem;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-emoji {
+            font-size: 4rem;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .product-details {
+            margin: 15px 0;
+        }
+
+        .product-detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .organic-badge {
+            background: #27ae60;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: #27ae60;
+            font-weight: bold;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Fresh Food Store 🌟</h1>
+        </header>
+
+        <main>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-emoji">🥑</div>
+                    <h2 class="product-name">Fresh Avocados</h2>
+                    <span class="organic-badge">Organic</span>
+                    <div class="product-details">
+                        <div class="product-detail">
+                            <span>Origin:</span>
+                            <span>Spain</span>
+                        </div>
+                        <div class="product-detail">
+                            <span>Nutrients:</span>
+                            <span>Vitamin B, Vitamin K</span>
+                        </div>
+                    </div>
+                    <div class="price">$6.50</div>
+                    <p class="description">A ripe avocado yields to gentle pressure when squeezed. Rich, creamy texture and buttery flavor. Perfect for guacamole, sandwiches, and salads.</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-emoji">🧀</div>
+                    <h2 class="product-name">Goat and Sheep Cheese</h2>
+                    <div class="product-details">
+                        <div class="product-detail">
+                            <span>Origin:</span>
+                            <span>Portugal</span>
+                        </div>
+                        <div class="product-detail">
+                            <span>Nutrients:</span>
+                            <span>Vitamin A, Calcium</span>
+                        </div>
+                    </div>
+                    <div class="price">$4.95</div>
+                    <p class="description">Creamy and distinct in flavor, goat cheese is a dairy product enjoyed on its own or in cooking. This cheese is made from goat and sheep milk.</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-emoji">🥦</div>
+                    <h2 class="product-name">Apollo Broccoli</h2>
+                    <span class="organic-badge">Organic</span>
+                    <div class="product-details">
+                        <div class="product-detail">
+                            <span>Origin:</span>
+                            <span>Italy</span>
+                        </div>
+                        <div class="product-detail">
+                            <span>Nutrients:</span>
+                            <span>Vitamin C, Vitamin K</span>
+                        </div>
+                    </div>
+                    <div class="price">$3.75</div>
+                    <p class="description">Fresh broccoli with a robust, earthy flavor. High in fiber and has anti-inflammatory properties. Great steamed or roasted.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Fresh Food Store. All rights reserved. 🌱</p>
+        </footer>
+    </div>
+</body>
+</html>     

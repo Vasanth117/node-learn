@@ -1,0 +1,33 @@
+
+   [
+    {
+      "id": 0,
+      "productName": "Fresh Avocados",
+      "image": "🥑", 
+      "from": "Spain",
+      "nutrients": "Vitamin B, Vitamin K",
+      "quantity": "6.50",
+      "organic": true,
+      "description": "A ripe avocado yields to gentle pressure when squeezed. Rich, creamy texture and buttery flavor. Perfect for guacamole, sandwiches, and salads."
+    },
+    {
+      "id": 1,
+      "productName": "Goat and Sheep Cheese",
+      "image": "🧀",
+      "from": "Portugal", 
+      "nutrients": "Vitamin A, Calcium",
+      "quantity": "4.95",
+      "organic": false,
+      "description": "Creamy and distinct in flavor, goat cheese is a dairy product enjoyed on its own or in cooking. This cheese is made from goat and sheep milk."
+    },
+    {
+      "id": 2,
+      "productName": "Apollo Broccoli",
+      "image": "🥦",
+      "from": "Italy",
+      "nutrients": "Vitamin C, Vitamin K",
+      "quantity": "3.75",
+      "organic": true,
+      "description": "Fresh broccoli with a robust, earthy flavor. High in fiber and has anti-inflammatory properties. Great steamed or roasted."
+    }
+]       
